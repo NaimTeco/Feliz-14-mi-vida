@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Mi Amor ❤️</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    body{
+      margin: 0;
+      background: url(https://subtlepatterns.com/patterns/noise_lines.png);
+      font-family: 'Amatic SC', cursive;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .bgoverlay{
+      background: #fff;
+      position: absolute;
+      inset: 0;
+    }
+
+    .container{
+      position: relative;
+      margin: 100px auto 0 auto;
+      width: 450px;
+    }
+
+    /* CORAZÓN */
+
+    .ico{
+      display: block;
+      width: 450px;
+      height: 450px;
+      position: relative;
+    }
+
+    .open .ico{
+      animation: open 4s forwards;
+      transform: scale(10);
+    }
+
+    .ico .title{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 4;
+      font-size: 60px;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
+
+    .open .ico .title{
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .ico:before,
+    .ico:after,
+    .ico2:before,
+    .ico2:after{
+      position: absolute;
+      top:0;
+      left:0;
+      display: block;
+      font-size: 28em;
+      color: #ff0000;
+      content: "\f004";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+
+    .ico:before{ z-index: 3; }
+    .ico:after{ animation: explode 4s infinite; }
+    .ico2:before{ animation: explodeSmall 3s infinite; }
+    .ico2:after{ animation: explodeSmall 2s infinite; }
+
+    /* MENSAJE */
+
+    .endtext{
+      opacity:0;
+      position: absolute;
+      top:-100px;
+      width:100%;
+    }
+
+    .open .endtext{
+      top:0;
+      opacity: 1;
+      animation: show 2s forwards;
+    }
+
+    .close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      color: #000;
+      font-size: 28px;
+      z-index: 5;
+    }
+
+    .message{
+      margin-top: 40px;
+      max-height: 65vh;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .message h1,
+    .message h2,
+    .message h3{
+      text-align: center;
+      font-weight: normal;
+      color: #000;
+    }
+
+    .message h1{ font-size: 50px; }
+    .message h2{ font-size: 28px; line-height: 1.4; }
+    .message h3{ font-size: 22px; }
+
+    /* Scroll bonito */
+
+    .message::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .message::-webkit-scrollbar-thumb {
+      background: #ff4d6d;
+      border-radius: 10px;
+    }
+
+    /* Animaciones */
+
+    @keyframes explode {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(1.6); opacity: 0; }
+    }
+
+    @keyframes explodeSmall {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(1.2); opacity: 0; }
+    }
+
+    @keyframes open {
+      from { transform: scale(1); }
+      to { transform: scale(10); }
+    }
+
+    @keyframes show {
+      from { opacity: 0; top: -100px; }
+      to { opacity: 1; top:0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="bgoverlay">
+  <div class="container">
+    <span class="ico">
+      <span class="ico2"></span>
+      <span class="title">Toca mi Corazoncito</span>
+    </span>
+
+    <div class="endtext">
+      <span class="close"><i class="fa-solid fa-xmark"></i></span>
+
+      <div class="message">
+        <h1>FELIZ 14 DE FEBRERO MI VIDA</h1>
+        <h2>
+          Mi amor, hoy es nuestro primer 14 de Febrero juntos...
+          y no sabes cómo agradezco esto. El estar contigo me hace inmensamente feliz, más de lo que imaginas. No sabes lo que significas para mí. Gracias por concederme esto, por ser la niña que eres, por amarme de la manera en que lo haces. Te has vuelto mis ganas de salir adelante, todo lo que hago lo hago pensando en ti, porque ya no veo una vida sin ti, te has vuelto mi todo y gracias a ti ahora sé lo que es amar de verdad, como siempre te digo, nunca terminaré de agradecerte todo lo que haces por mi, lo único que quiero es verte feliz, que se dibuje esa hermosa sonrisa e tu carita monita y que me ames, mi mayor miedo es que lo dejes de hacer, porque me duele verte mal, me duele demasiado, es una impotencia enorme no poder hacer más por verte bien, a pesar de eso, no tengas duda que toda mi vida estaré para ti, que haré todo lo posible porque estes bien, porque por ti haré lo que sea, sacaré fuerzas incluso cuando no las tenga, todo por que tú, el amor de mi vida, este bien. Contigo quiero una familia, contigo quiero estar toda la vida, contigo lo quiero todo y nunca me cansaré de quererlo, ¿cómo dejarte de amar? si mi vida eres tú y mi vida te pertenece.
+        </h2>
+        <h3>Te amo de aquí a la luna, a pasito de tortuga... y bueno, ya te sabes lo demas jijiji
+</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="bgMusic" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+$(document).ready(function(){
+
+  const music = document.getElementById("bgMusic");
+  music.volume = 0.6; // volumen inicial (0.0 a 1.0)
+
+  $('.title').click(function(){
+    $('.container').addClass('open');
+    music.play();
+  });
+
+  $('.close').click(function(){
+    $('.container').removeClass('open');
+    music.pause();
+    music.currentTime = 0;
+  });
+
+});
+</script>
+
+</body>
+</html>
+
+
+
+
