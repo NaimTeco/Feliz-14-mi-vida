@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para Mi Amor ❤️</title>
+  <title>Para Mi Cuchurrumina ❤️</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -115,8 +115,22 @@
       margin-top: 40px;
       max-height: 65vh;
       overflow-y: auto;
-      padding: 20px;
+      padding: 30px;
       box-sizing: border-box;
+
+      background: linear-gradient(
+        to bottom,
+        #fffdf7 0%,
+        #fff8e7 100%
+      );
+
+      border-radius: 15px;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,0.15),
+        inset 0 0 10px rgba(0,0,0,0.05);
+
+      border: 2px solid #ffd1dc;
     }
 
     .message h1,
@@ -124,12 +138,34 @@
     .message h3{
       text-align: center;
       font-weight: normal;
-      color: #000;
+      color: #4a2c2a;
     }
 
     .message h1{ font-size: 50px; }
     .message h2{ font-size: 28px; line-height: 1.4; }
     .message h3{ font-size: 22px; }
+
+    /* IMAGEN */
+
+    .love-img{
+      display: block;
+      max-width: 100%;
+      width: 80%;
+      margin: 25px auto;
+      border-radius: 20px;
+
+      box-shadow:
+        0 0 15px rgba(255,105,180,0.4),
+        0 8px 20px rgba(0,0,0,0.2);
+
+      border: 4px solid #ffb6c1;
+
+      transition: transform 0.4s ease;
+    }
+
+    .love-img:hover{
+      transform: scale(1.05);
+    }
 
     /* Scroll bonito */
 
@@ -180,12 +216,15 @@
 
       <div class="message">
         <h1>FELIZ 14 DE FEBRERO MI VIDA</h1>
+
+        <!-- IMAGEN -->
+        <img src="foto.jpg" alt="Nuestra foto" class="love-img">
+
         <h2>
-          Mi amor, hoy es nuestro primer 14 de Febrero juntos...
-          y no sabes cómo agradezco esto. El estar contigo me hace inmensamente feliz, más de lo que imaginas. No sabes lo que significas para mí. Gracias por concederme esto, por ser la niña que eres, por amarme de la manera en que lo haces. Te has vuelto mis ganas de salir adelante, todo lo que hago lo hago pensando en ti, porque ya no veo una vida sin ti, te has vuelto mi todo y gracias a ti ahora sé lo que es amar de verdad, como siempre te digo, nunca terminaré de agradecerte todo lo que haces por mi, lo único que quiero es verte feliz, que se dibuje esa hermosa sonrisa e tu carita monita y que me ames, mi mayor miedo es que lo dejes de hacer, porque me duele verte mal, me duele demasiado, es una impotencia enorme no poder hacer más por verte bien, a pesar de eso, no tengas duda que toda mi vida estaré para ti, que haré todo lo posible porque estes bien, porque por ti haré lo que sea, sacaré fuerzas incluso cuando no las tenga, todo por que tú, el amor de mi vida, este bien. Contigo quiero una familia, contigo quiero estar toda la vida, contigo lo quiero todo y nunca me cansaré de quererlo, ¿cómo dejarte de amar? si mi vida eres tú y mi vida te pertenece.
+          Mi amor, hoy es nuestro primer 14 de Febrero juntos y no sabes cómo agradezco esto. El estar contigo me hace inmensamente feliz, más de lo que imaginas. No sabes lo que significas para mí. Gracias por concederme esto, por ser la niña que eres, por amarme de la manera en que lo haces. Te has vuelto mis ganas de salir adelante, todo lo que hago lo hago pensando en ti, porque ya no veo una vida sin ti, te has vuelto mi todo y gracias a ti ahora sé lo que es amar de verdad, como siempre te digo, nunca terminaré de agradecerte todo lo que haces por mi, lo único que quiero es verte feliz, que se dibuje esa hermosa sonrisa e tu carita monita y que me ames, mi mayor miedo es que lo dejes de hacer, porque me duele verte mal, me duele demasiado, es una impotencia enorme no poder hacer más por verte bien, a pesar de eso, no tengas duda que toda mi vida estaré para ti, que haré todo lo posible porque estes bien, porque por ti haré lo que sea, sacaré fuerzas incluso cuando no las tenga, todo por que tú, el amor de mi vida, este bien. Contigo quiero una familia, contigo quiero estar toda la vida, contigo lo quiero todo y nunca me cansaré de quererlo, ¿cómo dejarte de amar? si mi vida eres tú y mi vida te pertenece.
         </h2>
-        <h3>Te amo de aquí a la luna, a pasito de tortuga... y bueno, ya te sabes lo demas jijiji
-</h3>
+
+        <h3>Te amo de aquí a la luna, a pasito de tortuga... y bueno, ya te sabes lo demas jijiji</h3>
       </div>
     </div>
   </div>
@@ -200,7 +239,7 @@
 $(document).ready(function(){
 
   const music = document.getElementById("bgMusic");
-  music.volume = 0.6; // volumen inicial (0.0 a 1.0)
+  music.volume = 0.6;
 
   $('.title').click(function(){
     $('.container').addClass('open');
@@ -218,6 +257,8 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+
 
 
 
